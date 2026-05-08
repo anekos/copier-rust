@@ -12,11 +12,3 @@ project_type:
   choices:
     - bin
     - lib
-
-_is_lib:
-  type: bool
-  default: "{{ project_type == 'lib' }}"
-
-_is_bin:
-  type: bool
-  default: "{{ project_type == 'bin' }}"
