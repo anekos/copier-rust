@@ -14,3 +14,4 @@ setup:
 	rustup component add clippy
 	rustup component add rustfmt
 	cargo install prek
+	prek install
