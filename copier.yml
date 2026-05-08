@@ -1,0 +1,22 @@
+project_name:
+  type: str
+  help: What is your project name?
+
+package_name:
+  type: str
+  default: "{{ project_name.lower().replace(' ', '_') }}"
+
+project_type:
+  type: str
+  help: Choose the type of your project.
+  choices:
+    - bin
+    - lib
+
+_is_lib:
+  type: bool
+  default: "{{ project_type == 'lib' }}"
+
+_is_bin:
+  type: bool
+  default: "{{ project_type == 'bin' }}"
